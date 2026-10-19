@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #ff7eb3, #ff758c, #7eb3ff, #75ffb3);
+            background-size: 300% 300%;
+            animation: gradientBG 10s infinite alternate ease-in-out;
+            overflow: hidden;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            width: 400px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        input, textarea {
+            width: 90%;
+            margin: 10px 0;
+            padding: 10px;
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            outline: none;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background: #ff7eb3;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #ff4f85;
+        }
+        .thank-you {
+            display: none;
+            font-size: 20px;
+            font-weight: bold;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Information</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required><br>
+            <input type="text" id="contact" placeholder="Your Contact" required><br>
+            <input type="email" id="email" placeholder="Your Email" required><br>
+            <textarea id="message" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+        <p class="thank-you">Thank you! Your message has been sent.</p>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let name = document.getElementById('name').value;
+            let contact = document.getElementById('contact').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+            if (name && contact && email && message) {
+                document.querySelector('.thank-you').style.display = 'block';
+                setTimeout(() => {
+                    document.querySelector('.thank-you').style.display = 'none';
+                    document.getElementById('contactForm').reset();
+                }, 3000);
+            }
+        });
+    </script>
+
+
+
+</body>
+</html>

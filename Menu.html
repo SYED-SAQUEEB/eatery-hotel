@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Eatery Menu</title>
+     <link rel="icon" type="image/x-icon" href="images/Capture01.PNG">
+<!-- 
+
+Eatery Cafe
+
+http://www.templatemo.com/tm-515-eatery
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-style.css">
+     <style>
+          body {
+               font-family: Arial, sans-serif;
+               margin: 0;
+               padding: 0;
+               background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+               background-size: cover;
+               text-align: center;
+             }
+             .menu-container {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+               gap: 20px;
+               padding: 20px;
+             }
+             .menu-item {
+               background: rgba(255, 255, 255, 0.9);
+               border-radius: 10px;
+               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+               width: 200px;
+               text-align: center;
+               overflow: hidden;
+               animation: fadeIn 1s ease-in-out;
+             }
+             @keyframes fadeIn {
+               from {
+                 opacity: 0;
+               }
+               to {
+                 opacity: 1;
+               }
+             }
+             .menu-item img {
+               width: 100%;
+               height: 150px;
+               object-fit: cover;
+             }
+             .menu-item .details {
+               padding: 10px;
+             }
+             .menu-item h4 {
+               margin: 10px 0;
+             }
+             .menu-item p {
+               margin: 5px 0;
+               font-size: 18px;
+               font-weight: bold;
+             }
+             .menu-item button {
+               padding: 8px 12px;
+               background-color: #28a745;
+               color: white;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+             }
+             .menu-item button:hover {
+               background-color: #218838;
+             }
+                  
+     </style>
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand">Eatery <span>.</span> Cafe</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="index.html" class="smoothScroll">Home</a></li>
+                         <li><a href="#about" class="smoothScroll">About</a></li>
+                         <li><a href="#team" class="smoothScroll">Chef</a></li>
+                         <li><a href="Menu.html" class="smoothScroll">Menu</a></li>
+                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#">Call Now! <i class="fa fa-phone"></i>=8055103932</a></li>
+                         <a href="Rooms Booking.html" class="section-btn">Reserve Rooms</a>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="row">
+
+                    <div class="owl-carousel owl-theme">
+                         <div class="item item-first">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-8 col-sm-12">
+                                             <h3>Eatery Cafe &amp; Restaurant</h3>
+                                             <h1>Our mission is to provide an unforgettable experience</h1>
+                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Meet our chef</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="item item-second">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-8 col-sm-12">
+                                             <h3>Your Perfect Breakfast</h3>
+                                             <h1>The best dinning quality can be here too!</h1>
+                                             <a href="Menu.html" class="section-btn btn btn-default smoothScroll">Discover menu</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="item item-third">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-8 col-sm-12">
+                                             <h3>New Restaurant in Town</h3>
+                                             <h1>Enjoy our special menus every Sunday and Friday</h1>
+                                             <a href="#contact" class="section-btn btn btn-default smoothScroll">Reservation</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+          </div>
+     </section>
+
+     <h1>Hotel Food Menu</h1>
+     <h2>Chicken Items</h2>
+
+  <div class="menu-container">
+
+    <div class="menu-item">
+      <img src="img/Grilled Chicken.jpg" alt="Grilled Chicken">
+      <div class="details">
+        <h4>Grilled Chicken</h4>
+        <p>₹300</p>
+        <button onclick="orderItem()">Order</button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="img/Murgh-Malai-tikka-2.jpg.webp" alt="Vegetable Pasta">
+      <div class="details">
+        <h4>Chicken-Malai-tikka</h4>
+        <p>₹250</p>
+        <button onclick="orderItem()">Order</button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="img/chicken-korma.jpg" alt="Paneer Tikka">
+      <div class="details">
+        <h4>Chicken-korma</h4>
+        <p>₹200</p>
+        <button onclick="orderItem()">Order</button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="img/Afghani-Chicken-spices-and-cooking-in-the-kitchen-576x1024.jpg" alt="Fruit Salad">
+      <div class="details">
+        <h4>Afghani-Chicken</h4>
+        <p>₹350</p>
+        <button onclick="orderItem()">Order</button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="img/bbq-boneless-chicken.jpg" alt="Chocolate Cake">
+      <div class="details">
+        <h4>BBQ-Boneless-Chicken</h4>
+        <p>₹350</p>
+        <button onclick="orderItem()">Order</button>
+      </div>
+    </div>
+
+    <div class="menu-container">
+     <div class="menu-item">
+       <img src="img/chicken-maharaja.jpg" alt="Grilled Chicken">
+       <div class="details">
+         <h4>Chicken Maharaja</h4>
+         <p>₹300</p>
+         <button onclick="orderItem()">Order</button>
+       </div>
+     </div>
+
+     <div class="menu-item">
+       <img src="img/Chicken Lapta.webp" alt="Vegetable Pasta">
+       <div class="details">
+         <h4>Chicken Lapta</h4>
+         <p>₹400</p>
+         <button onclick="orderItem()">Order</button>
+       </div>
+     </div>
+
+     <div class="menu-item">
+       <img src="img/HYD Chicken.jpeg" alt="Paneer Tikka">
+       <div class="details">
+         <h4>Hyderabadi Green Chicken</h4>
+         <p>₹420</p>
+         <button onclick="orderItem()">Order</button>
+       </div>
+     </div>
+
+     <div class="menu-item">
+       <img src="img/Chutney-chicken-curry.jpg" alt="Fruit Salad">
+       <div class="details">
+         <h4>Green Chicken</h4>
+         <p>₹150</p>
+         <button onclick="orderItem()">Order</button>
+       </div>
+     </div>
+
+     <div class="menu-item">
+       <img src="img/HYD Chicken2.jpeg" alt="Chocolate Cake">
+       <div class="details">
+         <h4>Hyderabadi Chicken Tadka</h4>
+         <p>₹380</p>
+         <button onclick="orderItem()">Order</button>
+       </div>
+     </div>
+
+     <div class="menu-container">
+       <div class="menu-item">
+          <img src="img/Tandoori Chicken.webp" alt="Chocolate Cake">
+          <div class="details">
+            <h4>Tandoori Chicken</h4>
+            <p>₹450</p>
+            <button onclick="orderItem()">Order</button>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="img/FLV Kawaab.webp" alt="Chocolate Cake">
+          <div class="details">
+            <h4>Flavorful Mediterranean Chicken Kebab</h4>
+            <p>₹450</p>
+            <button onclick="orderItem()">Order</button>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="img/Fry kawab.jpg" alt="Chocolate Cake">
+          <div class="details">
+            <h4>Masala Fry Chicken kawaab</h4>
+            <p>₹450</p>
+            <button onclick="orderItem()">Order</button>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="img/pan kawab.webp" alt="Chocolate Cake">
+          <div class="details">
+            <h4>Pan Fry Chicken Kawaab</h4>
+            <p>₹450</p>
+            <button onclick="orderItem()">Order</button>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="img/Chicken-Malai-Tikka-Murg-Malai-Kebabs8.jpg" alt="Chocolate Cake">
+          <div class="details">
+            <h4>Murg-Malai-Kebabs</h4>
+            <p>₹450</p>
+            <button onclick="orderItem()">Order</button>
+          </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <h1>Rice</h1>
+
+    <div class="menu-container">
+  
+      <div class="menu-item">
+        <img src="img/basmati-rice-recipe.jpg" alt="Grilled Chicken">
+        <div class="details">
+          <h4>Basmati Rice</h4>
+          <p>₹100</p>
+          <button onclick="orderItem()">Order</button>
+        </div>
+      </div>
+  
+      <div class="menu-item">
+        <img src="img/Veg Rice.webp" alt="Vegetable Pasta">
+        <div class="details">
+          <h4>Vegetable Fried Rice </h4>
+          <p>₹100</p>
+          <button onclick="orderItem()">Order</button>
+        </div>
+      </div>
+  
+      <div class="menu-item">
+        <img src="img/jeera-rice-recipe.webp" alt="Paneer Tikka">
+        <div class="details">
+          <h4>Jeera Rice </h4>
+          <p>₹120</p>
+          <button onclick="orderItem()">Order</button>
+        </div>
+      </div>
+  
+      <div class="menu-item">
+        <img src="img/Rice cumcin.webp" alt="Fruit Salad">
+        <div class="details">
+          <h4>Jeera Rice | Cumin Rice </h4>
+          <p>₹110</p>
+          <button onclick="orderItem()">Order</button>
+        </div>
+      </div>
+  
+      <div class="menu-item">
+        <img src="img/lemon-rice-2-500x500.webp" alt="Chocolate Cake">
+        <div class="details">
+          <h4>Lemon Rice</h4>
+          <p>₹90</p>
+          <button onclick="orderItem()">Order</button>
+        </div>
+      </div>
+  
+      <div class="menu-container">
+       <div class="menu-item">
+         <img src="img/Chicken-Biryani-Recipe.jpg" alt="Grilled Chicken">
+         <div class="details">
+           <h4>Chicken Biryani </h4>
+           <p>₹180</p>
+           <button onclick="orderItem()">Order</button>
+         </div>
+       </div>
+  
+       <div class="menu-item">
+         <img src="img/_Hyderabadi_Dum_Biryani_.jpg" alt="Vegetable Pasta">
+         <div class="details">
+           <h4>Hyderabadi Dum Biryani</h4>
+           <p>₹240</p>
+           <button onclick="orderItem()">Order</button>
+         </div>
+       </div>
+  
+       <div class="menu-item">
+         <img src="img/Biryaani Deg.webp" alt="Paneer Tikka">
+         <div class="details">
+           <h4>Degi Biryani </h4>
+           <p>₹200</p>
+           <button onclick="orderItem()">Order</button>
+         </div>
+       </div>
+  
+       <div class="menu-item">
+         <img src="img/Sindhi Biryaani.webp" alt="Fruit Salad">
+         <div class="details">
+           <h4>Sindhi Biryani</h4>
+           <p>₹220</p>
+           <button onclick="orderItem()">Order</button>
+         </div>
+       </div>
+  
+       <div class="menu-item">
+         <img src="img/mutan Biryaani.jpg" alt="Chocolate Cake">
+         <div class="details">
+           <h4>Mutton Biryaani</h4>
+           <p>₹180</p>
+           <button onclick="orderItem()">Order</button>
+         </div>
+       </div>
+  
+       <div class="menu-container">
+         <div class="menu-item">
+            <img src="img/Kolkata Biryaani.jpg" alt="Chocolate Cake">
+            <div class="details">
+              <h4>Kolkata Biryani Moshla</h4>
+              <p>₹239</p>
+              <button onclick="orderItem()">Order</button>
+            </div>
+          </div>
+  
+          <div class="menu-item">
+            <img src="img/Nizami Biryaani.jpg" alt="Chocolate Cake">
+            <div class="details">
+              <h4>Nizami Biryaani</h4>
+              <p>₹250</p>
+              <button onclick="orderItem()">Order</button>
+            </div>
+          </div>
+  
+          <div class="menu-item">
+            <img src="img/Lucknowi Vegetable Biryani.jpeg" alt="Chocolate Cake">
+            <div class="details">
+              <h4>Lucknowi Vegetable Biryani</h4>
+              <p>₹250</p>
+              <button onclick="orderItem()">Order</button>
+            </div>
+          </div>
+  
+          <div class="menu-item">
+            <img src="img/BombayBiryani_Featured4.jpg" alt="Chocolate Cake">
+            <div class="details">
+              <h4>Bombay Biryani </h4>
+              <p>₹190</p>
+              <button onclick="orderItem()">Order</button>
+            </div>
+          </div>
+  
+          <div class="menu-item">
+            <img src="img/Andhra-Style-Chicken-Biryani.jpg" alt="Chocolate Cake">
+            <div class="details">
+              <h4>Andhra Style Chicken Biryani</h4>
+              <p>₹350</p>
+              <button onclick="orderItem()">Order</button>
+            </div>
+          </div>
+  
+      </div>
+      </div>
+
+
+      <h1>Dessert </h1>
+
+      <div class="menu-container">
+    
+        <div class="menu-item">
+          <img src="img/chocolate-hazelnut-dessert-in-a-glass-1-2.jpg" alt="Grilled Chicken">
+          <div class="details">
+            <h4>Chocolate Hazelnut Dessert </h4>
+            <p>₹250</p>
+            <button onclick="orderItem()">Order</button>
+          </div>
+        </div>
+    
+        <div class="menu-item">
+          <img src="img/chocolate1.jpg" alt="Vegetable Pasta">
+          <div class="details">
+            <h4>Chocolate Praline Trifle </h4>
+            <p>₹190</p>
+            <button onclick="orderItem()">Order</button>
+          </div>
+        </div>
+    
+        <div class="menu-item">
+          <img src="img/Caramel-Topped Ice Cream.jpg" alt="Paneer Tikka">
+          <div class="details">
+            <h4>Caramel-Topped Ice Cream </h4>
+            <p>₹120</p>
+            <button onclick="orderItem()">Order</button>
+          </div>
+        </div>
+    
+        <div class="menu-item">
+          <img src="img/Strawberry bavarois fruit.jpg" alt="Fruit Salad">
+          <div class="details">
+            <h4>Strawberry bavarois fruit</h4>
+            <p>₹189</p>
+            <button onclick="orderItem()">Order</button>
+          </div>
+        </div>
+    
+        <div class="menu-item">
+          <img src="img/Schwarzwälder-.avif" alt="Chocolate Cake">
+          <div class="details">
+            <h4>Schwarzwälder-</h4>
+            <p>₹190</p>
+            <button onclick="orderItem()">Order</button>
+          </div>
+        </div>
+    
+        <div class="menu-container">
+         <div class="menu-item">
+           <img src="img/gulab-jamun-mousse-layered-dessert.jpg" alt="Grilled Chicken">
+           <div class="details">
+             <h4>Gulab Jamun Thandai Mousse Indian Fusion </h4>
+             <p>₹180</p>
+             <button onclick="orderItem()">Order</button>
+           </div>
+         </div>
+    
+         <div class="menu-item">
+           <img src="img/Chocolate Layered Sweet Treat.jpeg" alt="Vegetable Pasta">
+           <div class="details">
+             <h4>Chocolate Layered Sweet Treat</h4>
+             <p>₹200</p>
+             <button onclick="orderItem()">Order</button>
+           </div>
+         </div>
+    
+         <div class="menu-item">
+           <img src="img/Hot Fudge Ice Cream Bar.jpg" alt="Paneer Tikka">
+           <div class="details">
+             <h4>Hot Fudge Ice Cream Bar </h4>
+             <p>₹129</p>
+             <button onclick="orderItem()">Order</button>
+           </div>
+         </div>
+    
+         <div class="menu-item">
+           <img src="img/Panna-Cotta-1.jpg" alt="Fruit Salad">
+           <div class="details">
+             <h4>Strawberry Panna Cotta</h4>
+             <p>₹220</p>
+             <button onclick="orderItem()">Order</button>
+           </div>
+         </div>
+    
+         <div class="menu-item">
+           <img src="img/cake-with-chocolate-vanilla-ice-cream-it_662214-126429.jpg" alt="Chocolate Cake">
+           <div class="details">
+             <h4>cake with chocolate & vanilla ice cream</h4>
+             <p>₹180</p>
+             <button onclick="orderItem()">Order</button>
+           </div>
+         </div>
+    
+        
+    
+          
+    
+           
+    
+           
+    
+           
+    
+        </div>
+        </div>
+
+  <script>
+    function orderItem() {
+      alert("Thank's for ordering.... Your order placed to your room soon. Enjoy the meal!");
+    }
+  </script>
+
+      
+
+   
+
+
+
+        <!-- FOOTER -->
+        <footer id="footer" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Find us</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>Motiwala Avenue,<br> Maharashtra State Highway 30,<br>Ramanand Colony,<br> Aurangabad Maharashtra 431001</p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Reservation</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>8055103932 | 7517981034</p>
+                                   <p><a href="mailto:info@company.com">syedsaqueeb085@gmail.com</a></p>
+                                   <p>LINE: eatery247
+                                         </p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-8">
+                         <div class="footer-info footer-open-hour">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Open Hours</h2>
+                              </div>
+                              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p></p>
+                                   <div>
+                                        <strong>Monday to Friday</strong>
+                                        <p>9:00 AM - 10:00 PM</p>
+                                   </div>
+                                   <div>
+                                        <strong>Saturday - Sunday</strong>
+                                        <p>10:00 AM - 10:00 PM</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4">
+                         <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                              <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                              <li><a href="#" class="fa fa-twitter"></a></li>
+                              <li><a href="#" class="fa fa-instagram"></a></li>
+                              <li><a href="#" class="fa fa-google"></a></li>
+                         </ul>
+
+                         <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
+                              <p><br>Copyright &copy; 2024 <br>Eatery Cafe 
+                              
+                              <br><br>Design by: <br><b>Syed Saqueeb</b></p>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
